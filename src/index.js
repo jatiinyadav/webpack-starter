@@ -1,5 +1,11 @@
 import joke from '../src/generateJoke'
-import hello from '../src/example'
+import laugh from "./assets/laugh.png"
+import "./styles/main.scss"
 
-console.log(joke());
-console.log(hello());
+const imgLaugh = document.getElementById("laughimg")
+imgLaugh.src = laugh
+
+const jokeBtn = document.getElementById("jokeBtn")
+jokeBtn.addEventListener("click", joke)
+
+joke()
